@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    
+    <div class="wrapper">
+
+        <div class="calc">
+            <div class="windowType">
+                <div id="windowsCount" value="1" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" value="1" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1"><img src="/imgs/w1.svg" width="30px" alt=""></label>
+                  
+                    <input type="radio" class="btn-check" value="2" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2"><img src="/imgs/w2.svg" width="60px" alt=""></label>
+                  
+                    <input type="radio" class="btn-check" value="3" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3"><img src="/imgs/w3.svg" width="90px" alt=""></label>
+
+                    <input type="radio" class="btn-check" value="4" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio4"><img src="/imgs/w4.svg" width="120px" alt=""></label>
+                  </div>
+            </div>
+            
+            <div class="windowSize">
+                <div class="container">
+                    <div class="input">
+                        <span>Ширина</span>
+                        <span id="textWidth">0 mm</span>
+                    </div>
+                    <input id="width" type="range" min="0" max="3000" step="100" value="0">
+                </div>
+                <div class="container">
+                    <div class="input">
+                        <span>Высота</span>
+                        <span id="textHeight">0 mm</span>
+                    </div>
+                    <input id="height" type="range" min="0" max="7000" step="100" value="0">
+                </div>
+            </div>
+
+            <div class="slopackOpening">
+                <div class="cont">
+                    <span>Стеклопакет</span>
+                    <div class="dropdown">
+                        <button id="glazing" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Однокамерный
+                        </button>
+                        <ul class="dropdown-menu" value="1" id="glazingItems">
+                          <li><a class="dropdown-item" value="1" href="#">Однокамерный</a></li>
+                          <li><a class="dropdown-item" value="2" href="#">Двухкамерный</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="cont">
+                    <span>Тип окна</span>
+                    <div class="dropdown">
+                        <button id="windowType" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Глухое
+                        </button>
+                        <ul id="windowTypeItems" value="1" class="dropdown-menu">
+                          <li><a class="dropdown-item" value="1" href="#">Глухое</a></li>
+                          <li><a class="dropdown-item" value="2" href="#">Поворотно-откидное</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+
+            <div class="slopackOpening">
+                <div class="cont">
+                    <span>Камеры профиля</span>
+                    <div class="dropdown">
+                        <button id="profileCameras" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          3
+                        </button>
+                        <ul class="dropdown-menu" value="3" id="ProfileCamerasItems">
+                          <li><a class="dropdown-item" value="3" href="#">3</a></li>
+                          <li><a class="dropdown-item" value="4" href="#">4</a></li>
+                          <li><a class="dropdown-item" value="5" href="#">5</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="cont">
+                    <span>Цвет</span>
+                    <div class="colors">
+                      <div id="colors" value="Белый" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                          <input type="radio" class="btn-check" value="Белый" name="btnradio2" id="btnradiocolor1" autocomplete="off" checked>
+                          <label class="btn btn-outline-primary" for="btnradiocolor1"><img class="imgcolor" src="/imgs/color0.png" height="10px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Дуб Рустикал" name="btnradio2" id="btnradiocolor2" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btnradiocolor2"><img class="imgcolor" src="/imgs/color1.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Махагони" name="btnradio2" id="btnradiocolor3" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btnradiocolor3"><img class="imgcolor" src="/imgs/color2.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Шоколадный коричневый" name="btnradio2" id="btnradiocolor4" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btnradiocolor4"><img class="imgcolor" src="/imgs/color3.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Рустикальный дуб" name="btnradio2" id="btnradiocolor5" autocomplete="off" >
+                          <label class="btn btn-outline-primary" for="btnradiocolor5"><img class="imgcolor" src="/imgs/color4.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Мореный дуб" name="btnradio2" id="btnradiocolor6" autocomplete="off" >
+                          <label class="btn btn-outline-primary" for="btnradiocolor6"><img class="imgcolor" src="/imgs/color5.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Золотой дуб" name="btnradio2" id="btnradiocolor7" autocomplete="off" >
+                          <label class="btn btn-outline-primary" for="btnradiocolor7"><img class="imgcolor" src="/imgs/color6.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Дуб монтана" name="btnradio2" id="btnradiocolor8" autocomplete="off" >
+                          <label class="btn btn-outline-primary" for="btnradiocolor8"><img class="imgcolor" src="/imgs/color7.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Антрацит" name="btnradio2" id="btnradiocolor9" autocomplete="off" >
+                          <label class="btn btn-outline-primary" for="btnradiocolor9"><img class="imgcolor" src="/imgs/color8.png" width="20px" alt=""></label>
+
+                          <input type="radio" class="btn-check" value="Орех" name="btnradio2" id="btnradiocolor10" autocomplete="off" >
+                          <label class="btn btn-outline-primary" for="btnradiocolor10"><img class="imgcolor" src="/imgs/color9.png" width="20px" alt=""></label>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+            <div id="additional" class="addtitionalParameters">
+                <div class="additionalItem">
+                    <div class="form-check">
+                        <input class="form-check-input" id="check1" type="checkbox" value="off" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Подоконник
+                        </label>
+                      </div>
+                </div>
+                <div class="additionalItem">
+                    <div class="form-check">
+                        <input class="form-check-input" id="check2" type="checkbox" value="off" id="flexCheckChecked1">
+                        <label class="form-check-label" for="flexCheckChecked1">
+                          Москитная сетка
+                        </label>
+                      </div>
+                </div>
+                <div class="additionalItem">
+                    <div class="form-check">
+                        <input class="form-check-input" id="check3" type="checkbox" value="off" id="flexCheckChecked2">
+                        <label class="form-check-label" for="flexCheckChecked2">
+                          Отливы
+                        </label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="buttonContainer">
+                <button type="button" id="calculate" class="btn btn-primary">Calculate </button>
+                Цена: 
+                <span id="result">0</span>
+                <span>грн.</span> 
+                Цвет:
+                <span id="colorResult"></span>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
